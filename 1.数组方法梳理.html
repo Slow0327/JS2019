@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // push                       向末尾添加    返回添加完的数组长度length
+    // unshift                    想开头添加      返回添加完的数组长度length
+    // pop                        末尾删除以向     返回删除的哪一项
+    // shift                      在开头删除一项    返回删除的哪一项
+    // splice                     a b c   从a开始删除b个添加c个
+    // slice                      a b     从a开始截取到b不包括b
+    // concat                     数组的拼接
+    // indexOf/lastIndexOf        查询第一个值出现的索引位置   从前  从后
+    // toString/join               数组转字符
+    // reverse                     反转数组
+    // sort                       a b   a-b从大到小排序
+    // forEach                    数组遍历
+    // map                        修改数组每一项  变成新数组返回
+
+    // 向数组末尾添加
+    // push(x)
+    // splice(ary.length, 0, x)
+    // ary[ary.length] = x
+
+    // 向数组开头添加
+    // unshift
+    // splice(0, 0, n)
+
+    // 删除数组末尾
+    // pop()
+    // splice(-1)
+    // ary.length--
+
+    // 删除数组开头
+    // shift()
+    // splice(0, 1)
+
+    // 克隆/截取
+    // slice()
+    // slice(x) 
+    // slice(x, y) // 从索引x处开始，截取大索引y处（不包含索引y这一项）
+    
+    // sort排序
+    // // 从小到大排序
+    // a.sort(function(a, b) {
+    //   return a - b
+    // })
+
+    // // 从大到小排序
+    // a.sort(function(a, b) {
+    //   return b - a
+    // })
+
+    // toString/join
+    var a = [1, 2, 3]
+    a.join('+') // "1+2+3"
+    eval(a.join('+')) // eval("1+2+3") => 6
+
+    // for forEach map 遍历数组
+    
+    var arr = [1, 2, 3, 4, 5]
+    for (var i = 0; i < arr.length; i++) {
+      console.log(i, arr[i])
+    }
+
+    arr.forEach(function(item, ind) {
+      // item 当前循环出来的那一项 
+      // ind 当前那一项的索引
+      console.log(item, ind)
+    })
+
+    var res = arr.map(function(item, ind) {
+      return item * 10
+    })
+    console.log(res)
+
+  </script>
+</body>
+</html>
