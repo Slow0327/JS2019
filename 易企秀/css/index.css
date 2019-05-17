@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.music_icon {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../img/music.svg");
+  right: 1.06666667rem;
+  top: 1.06666667rem;
+  background-size: contain;
+  animation: move123 1s linear infinite;
+  animation-play-state: paused;
+  z-index: 500;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .bigly_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .bigly_box .big_box {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .bigly_box .big_box .first_box {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/firstbg.webp");
+  background-size: 100% 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .bigly_box .big_box .first_box .logo {
+  position: absolute;
+  top: 8%;
+  left: 44%;
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide .bigly_box .big_box .first_box .write {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  height: 0.8rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide .bigly_box .big_box .first_box .write p {
+  font-size: 1.2rem;
+  color: crimson;
+  text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  background: url(../img/bg.webp);
+  background-size: 100% 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .second_box {
+  width: 65%;
+  flex-direction: row-reverse;
+  margin: 21% auto;
+}
+.swiper-container .swiper-wrapper .swiper-slide .second_box p {
+  padding: 0.26666667rem 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .second_box .tou {
+  color: red;
+  font-size: 1.73333333rem;
+  text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .second_box .sr {
+  margin: 0.66666667rem auto;
+}
+.swiper-container .swiper-wrapper .swiper-slide .second_box .write2 {
+  text-align: justify !important;
+  line-height: 1.46666667rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide .second_box .company {
+  line-height: 1.73333333rem;
+  text-align: right;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  background: url(../img/bg.webp);
+  background-size: 100% 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .tou3 {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  color: red;
+  font-size: 1.73333333rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write {
+  margin: 42% auto;
+  display: -webkit-flex;
+  width: 80%;
+  height: 70%;
+  text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .time {
+  flex: 1;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .time li {
+  padding: .9rem 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .time li:not(:first-child) {
+  padding: 1.08rem 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .span {
+  width: 15%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .span img {
+  padding: .9rem 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .right_write {
+  flex: 1;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .right_write li {
+  padding: .9rem 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide .write .right_write li:not(:first-child) {
+  padding: 1.08rem 0;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  background: url(../img/bg.webp);
+  background-size: 100% 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .tou4 {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%);
+  color: red;
+  font-size: 1.73333333rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide .four_box {
+  width: 70%;
+  height: 70%;
+  margin: 40% auto;
+}
+.swiper-container .swiper-wrapper .swiper-slide .four_box .input {
+  margin: 0 auto;
+  text-align: center;
+}
+.swiper-container .swiper-wrapper .swiper-slide .four_box .input input {
+  display: block;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  border: .05rem solid red;
+}
+@keyframes move123 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
